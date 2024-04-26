@@ -1,0 +1,100 @@
+## Personagens:
+
+1 - Mestre
+
+2 - Hero 1
+
+3 - Hero 2
+
+4 - Boss Inicial(Oponente)
+
+
+
+## Classes:
+
+1 - Guerreiro - dano, vida e defesas equiparadas.
+
+2 - Mago - maior dano, vida baixa e defesa baixa.
+
+3 - Tank - menos dano, maior vida e defesa alta.
+
+
+
+## Dados dos personagens:
+
+Heroi - Vida, Mana, Defesa, Dano, sorte/azar
+
+Oponente - Vida, Mana, Defesa, Dano, sorte/azar
+
+
+
+## Estatisticas da sorte/azar:
+
+v = [1, 1, 1, 1, 7, 7, 7, 15, 15, 15]
+
+Assim, ao fazer random.choice(v), as probabilidades desejadas serão respeitadas.
+
+
+
+## Dados de rolagem:
+
+Dado 1 -> Valor 1 - Erro critico
+
+Dado 2 ->  Entre 2 e 10 - Ação mais fraca
+
+Dado 3 -> Entre 11 e 19 - Ação um pouco mais forte
+
+Dado 4 -> Valor 20 - Consegue fzr td com mt sucesso(pode aumentar o dano(2x se pa))
+
+
+
+## Batalha:
+
+Dano - Dano base nos attacks normais e nas habilidades, aumentado de acordo com o Dano q o 
+personagem tiver
+
+Dano baseado no Dado 1 -> N faz o ataque
+
+Dano baseado no Dado 2 -> Metade do dano
+
+Dano baseado no Dado 3 -> Dano total
+
+Dano baseado no Dado 4 -> Dobro de dano(2x)
+
+
+
+Defesa - a cada 2 de defesa defende 1 de dano
+
+Defesa baseado no Dado 1 -> N defende nada(toma o dano 2x)
+
+Defesa baseado no Dado 2 -> Usa metade da defesa 
+
+Defesa baseado no Dado 3 -> Usa defesa total
+
+Defesa baseado no Dado 4 -> Ganha o dobro de defesa(2x)
+
+
+
+##### ATÉ AGORA TA FEITO #####
+
+
+
+## Habilidades:
+
+Guerreiro - 
+Ataque normal(dano total)
+Avanço com espada(dano total + 10)
+Giro com espada(dano total + 6)
+Execução(dano total + 20)
+
+Mago - 
+Ataque normal(dano total)
+Bola de fogo(dano total + 14)
+Choque do trovão(dano total +8)
+Meteoro de diamante(dano total + 22)
+
+Tank - 
+Ataque normal(dano total)
+Golpe de escudo(defesa total + 6)
+Armadura de espinhos(Reflete o dano do oponente baseado em metade da defesa total + metado do ataque do oponente)
+Armadura inquebravel(Invencivel por 2 turno)
